@@ -1,0 +1,58 @@
+$btn-light-color: #8992A9;
+$btn-default-color:#F4F5F7; 
+$btn-info-color:#3B72FF;
+.btn {
+  background: $btn-default-color;
+  border: 0;
+  border-radius: pxToEm(16, 14);
+
+  font-weight: 600;
+  font-size: pxToEm(14);
+  line-height: pxToEm(17, 14);
+  color: $btn-light-color;
+  padding: pxToEm(15.5, 14) pxToEm(24, 14);
+
+  @media screen and (max-width: 400px) {
+    font-size:10px;
+  }
+
+  &:hover, &:focus{
+    background: rgba($btn-default-color, 0.6);
+    outline:none;
+  }
+
+  &:active{
+    background: #e2e3e3;
+  }
+
+  &-remove {
+    background: transparent;
+    border: pxToEm(1, 14) solid transparent;
+    border-radius: pxToEm(16, 14);
+  
+    font-weight: 600;
+    font-size: pxToEm(14);
+    line-height: pxToEm(17, 14);
+    color: $btn-light-color;
+    padding: pxToEm(15.5, 14) pxToEm(5, 14);
+    @media screen and (max-width: 400px) {
+      font-size:10px;
+    }
+  
+    &:hover, &:focus{
+      outline:none;
+      border-color:$btn-light-color;
+    }
+  }
+
+
+  &-info {
+    background: $btn-info-color;
+    color: #fff;
+
+    &:hover, &:focus{
+      background: rgba($btn-info-color, 0.6);
+      outline:none;
+    }
+  }
+}

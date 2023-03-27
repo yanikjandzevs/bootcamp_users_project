@@ -1,0 +1,49 @@
+.btn {
+  background: #F4F5F7;
+  border: 0;
+  border-radius: pxToEm(16, 14);
+  font-weight: 600;
+  font-size: pxToEm(14);
+  line-height: pxToEm(17, 14);
+  color: #8992A9;
+  padding: pxToEm(15.5, 14) pxToEm(24, 14);
+}
+@media screen and (max-width: 400px) {
+  .btn {
+    font-size: 10px;
+  }
+}
+.btn:hover, .btn:focus {
+  background: rgba(244, 245, 247, 0.6);
+  outline: none;
+}
+.btn:active {
+  background: #e2e3e3;
+}
+.btn-remove {
+  background: transparent;
+  border: pxToEm(1, 14) solid transparent;
+  border-radius: pxToEm(16, 14);
+  font-weight: 600;
+  font-size: pxToEm(14);
+  line-height: pxToEm(17, 14);
+  color: #8992A9;
+  padding: pxToEm(15.5, 14) pxToEm(5, 14);
+}
+@media screen and (max-width: 400px) {
+  .btn-remove {
+    font-size: 10px;
+  }
+}
+.btn-remove:hover, .btn-remove:focus {
+  outline: none;
+  border-color: #8992A9;
+}
+.btn-info {
+  background: #3B72FF;
+  color: #fff;
+}
+.btn-info:hover, .btn-info:focus {
+  background: rgba(59, 114, 255, 0.6);
+  outline: none;
+}/*# sourceMappingURL=buttons.css.map */

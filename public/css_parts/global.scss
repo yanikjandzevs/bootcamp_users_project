@@ -1,0 +1,20 @@
+$btn-light-color: #8992A9;
+$btn-default-color:#F4F5F7; 
+$btn-info-color:#3B72FF;
+
+@function pxToEm($px, $font-size: 16) {
+  @return calc($px / $font-size) + 0em;
+}
+
+body {
+  background: #F8F8F8;
+  margin:0;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+p {
+  font-size:14px;
+}
